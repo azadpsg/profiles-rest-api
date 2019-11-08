@@ -7,6 +7,7 @@ from django.contrib.auth.models import BaseUserManager
 class UserProfileManager(BaseUserManager):
    """Manager for user Profiles"""
 
+
    def create_user(self, email, name, password=None):
        """create a new user"""
        if not email:
